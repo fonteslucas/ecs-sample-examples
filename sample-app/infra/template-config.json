@@ -1,0 +1,13 @@
+{
+  "Parameters" : {
+    "ECSCluster" : "ecs-template",
+    "ContainerNetworkMode" : "bridge",
+    "ContainerPort" : "80",
+    "CpuUnits" : "256",
+    "MemoryReservation" : "256",
+    "Memory" : "1024",
+    "DesiredCountService" : "2",
+    "MaxTaskCapacityASG" : "4",
+    "MinTaskCapacityASG" : "2"
+  }
+}
