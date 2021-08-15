@@ -215,8 +215,6 @@ Resources:
         PolicyName: "AddTaskPolicy"
         PolicyType: "StepScaling"
         ScalingTargetId: !Ref ApplicationAutoScalingScalableTarget
-        ScalableDimension: "ecs:service:DesiredCount"
-        ServiceNamespace: "ecs"
         StepScalingPolicyConfiguration: 
             AdjustmentType: "ChangeInCapacity"
             Cooldown: 60
@@ -231,8 +229,6 @@ Resources:
         PolicyName: "RemoveTaskPolicy"
         PolicyType: "StepScaling"
         ScalingTargetId: !Ref ApplicationAutoScalingScalableTarget
-        ScalableDimension: "ecs:service:DesiredCount"
-        ServiceNamespace: "ecs"
         StepScalingPolicyConfiguration: 
           AdjustmentType: ChangeInCapacity
           Cooldown: 60
